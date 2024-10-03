@@ -5,10 +5,7 @@ import authToken from "./utility/authToken";
 import store from "./redux/store";
 import PrivateRoute from './utility/PrivateRoute';
 import Login from './component/login/Login';
-import { Route } from 'react-router-dom';
-import { Routes } from 'react-router-dom';
-
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
