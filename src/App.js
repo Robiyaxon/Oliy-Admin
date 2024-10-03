@@ -8,6 +8,8 @@ import Login from './component/login/Login';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 
+
+
 function App() {
   useEffect(() => {
     if (localStorage.token) {
@@ -18,11 +20,6 @@ function App() {
       if (!localStorage.token) store.dispatch({ type: "LOGOUT" });
     });
   }, []);
-
-
-
-
-  
   return (
     <div className="App">
       <Routes>
